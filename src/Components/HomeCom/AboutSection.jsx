@@ -4,8 +4,11 @@ import React from 'react';
 
 const AboutSection = () => {
   return (
-    <section className='bg-blue '>
-      
+   <>
+   
+    <section className='bg-blue  relative '>
+        <div className="absolute -top-20 left-0 w-full h-[30%] z-50 bg-gradient-to-b blur-2xl from-[#102136] to-[#102136]"></div>
+       
       <div className='flex justify-center items-center px-13 py-24'>
         <div className='grid grid-cols-2 place-content-center'>
           <div className='flex justify-center'>
@@ -43,6 +46,7 @@ const AboutSection = () => {
         </div>
       </div>
     </section>
+   </>
 
     
   );

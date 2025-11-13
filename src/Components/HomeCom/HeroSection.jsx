@@ -5,7 +5,7 @@ import React from 'react';
 const HeroSection = () => {
     return (
         <section className="relative min-h-screen pb-40 pt-36 w-full overflow-hidden">
-        
+
             <video
                 autoPlay
                 muted
@@ -42,18 +42,22 @@ const HeroSection = () => {
                 <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
                     <a
                         href="#section-tickets"
-                       className="bg-skyBlue font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-6 py-2.5 rounded-md select-none"
+                        className="bg-skyBlue font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-6 py-2.5 rounded-md select-none"
                     >
                         Get Tickets
                     </a>
                     <a
                         href="#section-schedule"
-                       className="bg-transparent border  font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-6 py-2.5 rounded-md select-none"
+                        className="bg-transparent border  font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-6 py-2.5 rounded-md select-none"
                     >
                         View Schedule
                     </a>
                 </div>
             </div>
+
+
+            <div className="absolute -bottom-20 left-0 w-full h-[30%] z-50 bg-gradient-to-b blur-2xl from-[#102136] to-[#102136]"></div>
+
         </section>
     );
 };
