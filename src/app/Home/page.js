@@ -1,10 +1,14 @@
+import AboutSection from '@/Components/HomeCom/AboutSection'
 import HeroSection from '@/Components/HomeCom/HeroSection'
 import React from 'react'
 
 const Home = () => {
   return (
     <>
-    <HeroSection/>
+      <div className='overflow-hidden'>
+        <HeroSection />
+        <AboutSection />
+      </div>
     </>
   )
 }

@@ -4,13 +4,13 @@ import React from 'react';
 
 const HeroSection = () => {
     return (
-        <section className="relative h-screen w-full overflow-hidden">
-            {/* Background Video */}
+        <section className="relative min-h-screen pb-40 pt-36 w-full overflow-hidden">
+        
             <video
                 autoPlay
                 muted
                 loop
-                className="absolute top-0 left-0 w-full h-full object-cover"
+                className="absolute top-0 left-0 w-full h-[120%] object-cover"
             >
                 <source src="/video/2.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
@@ -20,7 +20,7 @@ const HeroSection = () => {
             <div className="absolute bottom-0 left-0 w-full h-[100%] z-20 bg-gradient-to-b from-[#5676f696] to-[#000000a4]"></div>
 
 
-            <div className="relative z-30 flex flex-col items-center justify-center text-center mt-21 h-full px-4 ">
+            <div className="relative z-30 flex flex-col items-center justify-center text-center mt-21 h-full px-4  ">
                 <p className="text-white font-Manrope font-semibold text-lg md:text-[15px] mb-2  tracking-[0.2px]">
                     <span className='text-skyBlue'>{"["}</span> The Future of Intelligence  <span className='text-skyBlue'>{"]"}</span>
                 </p>
