@@ -22,9 +22,9 @@ const Footer = () => {
             {/* Logo and social icons */}
             <div className='flex flex-col justify-center items-center'>
               <Image
-                src="/logo.webp"
+                src="/logo.png"
                 alt="Logo"
-                width={160}
+                width={140}
                 height={60}
               />
               <div className='flex gap-[10px] mt-8' >
