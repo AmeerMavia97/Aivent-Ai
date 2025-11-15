@@ -4,27 +4,27 @@ import React from 'react'
 const CardData = [
     {
         id: 1,
-        image: "/assets/l1.webp",
+        image: "/assets/benefits1.jpg",
         title: "Mantener la competitividad",
         desc: "Mantener la competitividad en un entorno empresarial digitalizado."
     },
     {
         id: 2,
-        image: "/assets/l1.webp",
-        title: "Optimizar procesos",
-        desc: "Impulsar la eficiencia operativa mediante el uso de IA y automatización."
+        image: "/assets/benefits2.png",
+        title: "Máximo el potencial",
+        desc: "Aprovechar al máximo el potencial de los datos para decisiones estratégicas."
     },
     {
         id: 3,
-        image: "/assets/l1.webp",
-        title: "Innovación continua",
-        desc: "Acelerar la innovación con soluciones basadas en datos."
+        image: "/assets/benefits3.jpg",
+        title: "Fomentar la innovación",
+        desc: "Fomentar la innovación y el desarrollo de soluciones creativas."
     },
     {
         id: 4,
-        image: "/assets/l1.webp",
-        title: `Toma de decisiones  inteligente`,
-        desc: "Mejorar decisiones estratégicas basadas en analítica avanzada."
+        image: "/assets/benefits4.jpg",
+        title: `Mejorar la retención`,
+        desc: "Mejorar la retención del talento al demostrar compromiso con su crecimiento y desarrollo profesional."
     }
 ];
 
