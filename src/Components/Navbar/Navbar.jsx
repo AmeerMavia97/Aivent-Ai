@@ -15,7 +15,19 @@ const menuItems = [
 export default function Navbar({ locoScroll }) {
     const [scrolled, setScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
+    useEffect(() => {
+        const handleScroll = () => {
+            // yahan window.pageYOffset lenis ke saath bhi work karta hai
+            if (window.scrollY > 11) {
+                setScrolled(true)
+            } else {
+                setScrolled(false)
+            }
+        }
 
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, [])
     // const onScroll = ({ scroll }) => {
     //     setScrolled(scroll > 30); // React state
     // };
@@ -24,10 +36,9 @@ export default function Navbar({ locoScroll }) {
     return (
         <>
             <nav
-                className={`fixed top-0 left-0 py-1.5 w-full z-[999999] transition-colors duration-300 ${scrolled
-                    ? "bg-blue shadow-md backdrop-blur-sm"
-                    : "bg-transparent"
-                    }`}
+                className={`fixed top-0 left-0 py-1.5 w-full z-[999999] 
+    transition-all duration-300 ease-[cubic-bezier(.4,0,.2,1)] 
+    ${scrolled ? "bg-blue/90 backdrop-blur-md shadow-md" : "bg-transparent shadow-none backdrop-blur-0"}`}
             >
                 <div className="max-w-7xl mx-auto px-6 sm:px-12 flex items-center justify-between h-16">
                     {/* Logo */}
