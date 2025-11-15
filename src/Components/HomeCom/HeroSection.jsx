@@ -4,7 +4,7 @@ import React from 'react';
 
 const HeroSection = () => {
     return (
-        <section className="relative min-h-screen pb-40 pt-36 w-full overflow-hidden">
+        <section className="relative min-h-screen pb-52 pt-36 w-full overflow-hidden">
 
             <video
                 autoPlay
@@ -20,15 +20,18 @@ const HeroSection = () => {
             <div className="absolute bottom-0 left-0 w-full h-[100%] z-20 bg-gradient-to-b from-[#5676f696] to-[#000000a4]"></div>
 
 
-            <div className="relative z-30 flex flex-col items-center justify-center text-center mt-21 h-full px-4  ">
+            <div className="relative z-30 flex flex-col items-center justify-center text-center mt-21 h-full px-4  "> 
+                
                 <p className="text-white font-Manrope font-semibold text-lg md:text-[15px] mb-2  tracking-[0.2px]">
-                    <span className='text-skyBlue'>{"["}</span> The Future of Intelligence  <span className='text-skyBlue'>{"]"}</span>
+                    <span className='text-skyBlue'>{"["}</span> y analítica avanzada
+                    In-company <span className='text-skyBlue'>{"]"}</span>
                 </p>
-                <h1 className="bg-[linear-gradient(0deg,#888888_0%,#ffffff_55%)] bg-clip-text text-transparent font-semibold text-4xl uppercase md:text-6xl lg:text-[117px] mb-6 leading-tight">
-                    AI Summit 2025
-                </h1>
 
-                <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8 mb-6 text-white">
+                <h1 className="bg-[linear-gradient(0deg,#888888_0%,#ffffff_55%)] bg-clip-text text-transparent font-semibold text-4xl uppercase md:text-6xl lg:text-[72px] mb-3 leading-tight">
+                    Certificaciones y diplomados <br />  de inteligencia artificial
+                </h1>
+               
+                {/* <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8 mb-6 text-white">
                     <div className="flex items-center space-x-3">
                         <Calendar className="text-skyBlue" />
                         <span className='font-Manrope font-bold text-[20.5px]'>October 1–5, 2025</span>
@@ -37,26 +40,21 @@ const HeroSection = () => {
                         <MapPin className="text-skyBlue" />
                         <span className='font-Manrope font-bold text-[20.5px]'>San Francisco, CA</span>
                     </div>
-                </div>
+                </div> */}
 
-                <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+                <div className="flex flex-col mt-5 md:flex-row space-y-4 md:space-y-0 md:space-x-4">
                     <a
                         href="#section-tickets"
-                        className="bg-skyBlue font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-6 py-2.5 rounded-md select-none"
+                        className="bg-skyBlue font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none"
                     >
-                        Get Tickets
+                        Más información
                     </a>
-                    <a
-                        href="#section-schedule"
-                        className="bg-transparent border  font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-6 py-2.5 rounded-md select-none"
-                    >
-                        View Schedule
-                    </a>
+                   
                 </div>
             </div>
 
 
-            <div className="absolute -bottom-20 left-0 w-full h-[30%] z-50 bg-gradient-to-b blur-2xl from-[#102136] to-[#102136]"></div>
+            <div className="absolute -bottom-28 -left-20 w-[140%] h-[30%] z-50 bg-gradient-to-b blur-2xl from-[#102136] to-[#102136]"></div>
 
         </section>
     );

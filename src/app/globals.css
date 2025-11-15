@@ -30,7 +30,13 @@ body {
   font-family: "Manrope";
 }
 
+/* LOCOMOTIVE SCROLL COLOR  */
 
+.c-scrollbar_thumb{
+  background-color: var(--skyBlue) !important;
+}
+
+/* ROTATING GLOBE ANIMATION  */
 
 .rotate {
   animation: spin 5s linear infinite;
@@ -40,7 +46,30 @@ body {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
+  }
+}
+
+
+/* MARQUEE ANIMATION  */
+.marquee-track {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 25s linear infinite;
+}
+
+.marquee-track.reverse {
+  animation-direction: reverse;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
   }
 }

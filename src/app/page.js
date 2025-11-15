@@ -1,10 +1,15 @@
 import React from 'react'
 import Home from './Home/page'
+import Navbar from '@/Components/Navbar/Navbar'
+import GsapSmooth from '@/Components/LocomotiveScroll/SmoothScroll'
 
 const App = () => {
   return (
     <>
-      <Home />
+      <GsapSmooth>
+        <Navbar/>
+        <Home />
+      </GsapSmooth>
     </>
   )
 }

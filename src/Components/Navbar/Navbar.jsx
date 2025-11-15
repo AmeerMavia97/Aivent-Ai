@@ -3,24 +3,30 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Navbar() {
+
+const menuItems = [
+    ["Inicio", "#home"],
+    ["Programas", "#about"],
+    ["Blog", "#why-attend"],
+    ["Nosotros", "#speakers"],
+    ["Contactanos", "#schedule"],
+];
+
+export default function Navbar({ locoScroll }) {
     const [scrolled, setScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
 
-    useEffect(() => {
-        function onScroll() {
-            setScrolled(window.scrollY > 30);
-        }
-        window.addEventListener("scroll", onScroll);
-        return () => window.removeEventListener("scroll", onScroll);
-    }, []);
+    // const onScroll = ({ scroll }) => {
+    //     setScrolled(scroll > 30); // React state
+    // };
+    // SmoothLenis.on('scroll', onScroll);
 
     return (
         <>
             <nav
-                className={`fixed top-0 left-0 py-1.5 w-full z-50 transition-colors duration-300 ${scrolled
-                        ? "bg-blue shadow-md backdrop-blur-sm"
-                        : "bg-transparent"
+                className={`fixed top-0 left-0 py-1.5 w-full z-[999999] transition-colors duration-300 ${scrolled
+                    ? "bg-blue shadow-md backdrop-blur-sm"
+                    : "bg-transparent"
                     }`}
             >
                 <div className="max-w-7xl mx-auto px-6 sm:px-12 flex items-center justify-between h-16">
@@ -28,9 +34,9 @@ export default function Navbar() {
                     <div className="flex-shrink-0 text-white font-bold text-xl select-none cursor-pointer">
                         <Link href="/" className="hover:text-purple-400 transition">
                             <Image
-                                src="/logo.webp"
+                                src="/logo.png"
                                 alt="Logo"
-                                width={120}
+                                width={80}
                                 height={60}
                                 className="w-150px"
                             />
@@ -39,16 +45,7 @@ export default function Navbar() {
 
                     {/* Desktop Menu */}
                     <ul className="hidden md:flex font-Manrope font-[700] space-x-9 flex-grow justify-center text-white text-[15px]">
-                        {[
-                            ["Home", "#home"],
-                            ["About", "#about"],
-                            ["Why Attend", "#why-attend"],
-                            ["Speakers", "#speakers"],
-                            ["Schedule", "#schedule"],
-                            ["Tickets", "#tickets"],
-                            ["Venue", "#venue"],
-                            ["FAQ", "#faq"],
-                        ].map(([label, href]) => (
+                        {menuItems.map(([label, href]) => (
                             <li key={href}>
                                 <Link href={href} className="hover:text-purple-400 transition">
                                     {label}
@@ -60,7 +57,7 @@ export default function Navbar() {
                     {/* Right Button */}
                     <div className="hidden md:block">
                         <button className="bg-skyBlue font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-6 py-2.5 rounded-md select-none">
-                            Buy Tickets
+                            Contacta con
                         </button>
                     </div>
 
@@ -110,16 +107,7 @@ export default function Navbar() {
                 {menuOpen && (
                     <div className="md:hidden bg-[#231e41dd] backdrop-blur-sm px-6 py-4">
                         <ul className="flex flex-col space-y-4 text-white font-medium">
-                            {[
-                                ["Home", "#home"],
-                                ["About", "#about"],
-                                ["Why Attend", "#why-attend"],
-                                ["Speakers", "#speakers"],
-                                ["Schedule", "#schedule"],
-                                ["Tickets", "#tickets"],
-                                ["Venue", "#venue"],
-                                ["FAQ", "#faq"],
-                            ].map(([label, href]) => (
+                            {menuItems.map(([label, href]) => (
                                 <li key={href}>
                                     <Link
                                         href={href}
