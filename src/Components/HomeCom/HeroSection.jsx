@@ -4,9 +4,10 @@ import React from 'react';
 
 const HeroSection = () => {
     return (
-        <section className="relative min-h-screen pb-52 pt-36 w-full overflow-hidden">
+        <section className="relative min-h-screen pb-52 pt-36 w-full flex justify-center  items-center overflow-hidden ">
 
-            <video
+            <div className='max-w-8xl'>
+                <video
                 autoPlay
                 muted
                 loop
@@ -55,6 +56,7 @@ const HeroSection = () => {
 
 
             <div className="absolute -bottom-28 -left-20 w-[140%] h-[30%] z-50 bg-gradient-to-b blur-2xl from-[#102136] to-[#102136]"></div>
+            </div>
 
         </section>
     );

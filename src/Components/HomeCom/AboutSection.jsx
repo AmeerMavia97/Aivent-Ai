@@ -6,8 +6,8 @@ const AboutSection = () => {
   return (
     <>
 
-      <div className='bg-blue relative flex items-center justify-center '>
-        <div className='flex justify-center items-center px-16 py-20'>
+      <div className='bg-blue relative flex items-center justify-center px-14 '>
+        <div className='flex justify-center items-center  py-20 max-w-[1200px]'>
           <div className='grid grid-cols-2 place-content-center'>
             <div className='flex justify-center'>
               <div className='flex flex-col justify-center gap-6'>
@@ -18,7 +18,7 @@ const AboutSection = () => {
                  Formamos Organizaciones  <br /> Data Driven
                 </h1>
 
-                <p className='text-[#ffffffda] font-Manrope text-[16px] font-[500] leading-[28px] w-[80%] '>
+                <p className='text-[#ffffffda] font-Manrope text-[16px] font-[500] leading-[28px] w-[90%] '>
                   Impartimos certificaciones y cursos de inteligencia artificial y analítica avanzada para empresas, con formación de alto impacto liderada por expertos certificados de prestigiosas instituciones como el MIT, Harvard, Kellogg, IPADE, ITAM y la Universidad Católica de Chile. Una combinación de excelencia académica y experiencia práctica adaptada a las necesidades de tu negocio.
                 </p>
 
