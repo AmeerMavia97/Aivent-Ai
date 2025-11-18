@@ -3,25 +3,42 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Navbar() {
+
+const menuItems = [
+    ["Inicio", "#home"],
+    ["Programas", "#about"],
+    ["Blog", "#why-attend"],
+    ["Nosotros", "#speakers"],
+    ["Contactanos", "#schedule"],
+];
+
+export default function Navbar({ locoScroll }) {
     const [scrolled, setScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
-
     useEffect(() => {
-        function onScroll() {
-            setScrolled(window.scrollY > 30);
+        const handleScroll = () => {
+            // yahan window.pageYOffset lenis ke saath bhi work karta hai
+            if (window.scrollY > 11) {
+                setScrolled(true)
+            } else {
+                setScrolled(false)
+            }
         }
-        window.addEventListener("scroll", onScroll);
-        return () => window.removeEventListener("scroll", onScroll);
-    }, []);
+
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, [])
+    // const onScroll = ({ scroll }) => {
+    //     setScrolled(scroll > 30); // React state
+    // };
+    // SmoothLenis.on('scroll', onScroll);
 
     return (
         <>
             <nav
-                className={`fixed top-0 left-0 py-1.5 w-full z-[999999] transition-colors duration-300 ${scrolled
-                        ? "bg-blue shadow-md backdrop-blur-sm"
-                        : "bg-transparent"
-                    }`}
+                className={`fixed top-0 left-0 py-1.5 w-full z-[999999] 
+    transition-all duration-300 ease-[cubic-bezier(.4,0,.2,1)] 
+    ${scrolled ? "bg-blue/90 backdrop-blur-md shadow-md" : "bg-transparent shadow-none backdrop-blur-0"}`}
             >
                 <div className="max-w-7xl mx-auto px-6 sm:px-12 flex items-center justify-between h-16">
                     {/* Logo */}
@@ -39,13 +56,7 @@ export default function Navbar() {
 
                     {/* Desktop Menu */}
                     <ul className="hidden md:flex font-Manrope font-[700] space-x-9 flex-grow justify-center text-white text-[15px]">
-                        {[
-                            ["Inicio", "#home"],
-                            ["Programas", "#about"],
-                            ["Blog", "#why-attend"],
-                            ["Nosotros", "#speakers"],
-                            ["Contactanos", "#schedule"],
-                        ].map(([label, href]) => (
+                        {menuItems.map(([label, href]) => (
                             <li key={href}>
                                 <Link href={href} className="hover:text-purple-400 transition">
                                     {label}
@@ -107,16 +118,7 @@ export default function Navbar() {
                 {menuOpen && (
                     <div className="md:hidden bg-[#231e41dd] backdrop-blur-sm px-6 py-4">
                         <ul className="flex flex-col space-y-4 text-white font-medium">
-                            {[
-                                ["Home", "#home"],
-                                ["About", "#about"],
-                                ["Why Attend", "#why-attend"],
-                                ["Speakers", "#speakers"],
-                                ["Schedule", "#schedule"],
-                                ["Tickets", "#tickets"],
-                                ["Venue", "#venue"],
-                                ["FAQ", "#faq"],
-                            ].map(([label, href]) => (
+                            {menuItems.map(([label, href]) => (
                                 <li key={href}>
                                     <Link
                                         href={href}

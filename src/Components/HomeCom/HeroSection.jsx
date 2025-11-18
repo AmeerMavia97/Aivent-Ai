@@ -4,9 +4,10 @@ import React from 'react';
 
 const HeroSection = () => {
     return (
-        <section className="relative min-h-screen pb-52 pt-36 w-full overflow-hidden">
+        <section className="relative min-h-screen pb-52 pt-36 w-full flex justify-center  items-center overflow-hidden ">
 
-            <video
+            <div className='max-w-8xl'>
+                <video
                 autoPlay
                 muted
                 loop
@@ -20,7 +21,7 @@ const HeroSection = () => {
             <div className="absolute bottom-0 left-0 w-full h-[100%] z-20 bg-gradient-to-b from-[#5676f696] to-[#000000a4]"></div>
 
 
-            <div className="relative z-30 flex flex-col items-center justify-center text-center mt-21 h-full px-4  "> 
+            <div data-aos="zoom-out"  data-aos-duration="2000"  data-aos-delay="1000" className="relative z-30 flex flex-col items-center justify-center text-center mt-21 h-full px-4  "> 
                 
                 <p className="text-white font-Manrope font-semibold text-lg md:text-[15px] mb-2  tracking-[0.2px]">
                     <span className='text-skyBlue'>{"["}</span> y analítica avanzada
@@ -55,6 +56,7 @@ const HeroSection = () => {
 
 
             <div className="absolute -bottom-28 -left-20 w-[140%] h-[30%] z-50 bg-gradient-to-b blur-2xl from-[#102136] to-[#102136]"></div>
+            </div>
 
         </section>
     );
