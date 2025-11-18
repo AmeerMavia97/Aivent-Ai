@@ -4,10 +4,10 @@ import React from 'react'
 const LevelsCard = ({title , desc, icon}) => {
     return (
         <div data-aos="img-gutter-only"   
-  data-aos-duration="1000" className='bg-[#263f5e57] rounded-[14px] '>
+  data-aos-duration="1000" className='bg-[#263f5e57] rounded-[14px] group   '>
 
             <div className='px-9 py-10 flex justify-between flex-col gap-7'>
-                <div className='flex items-center'>
+                <div className='flex items-center group-hover:scale-120 cursor-pointer transition-all duration-700 ease-out  w-max'>
                     <Image src={`${icon}`} width={90} height={90} alt={"icon"}></Image>
                 </div>
 

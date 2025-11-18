@@ -79,8 +79,8 @@ const ServiceSection = () => {
 
                     <div className='grid grid-cols-4 gap-4 px-1'>
                         {MiniCardItems.map(item => (
-                            <div data-aos="zoom-in" key={item.id} className='flex flex-col gap-2 justify-center items-center py-9 px-8 rounded-[8px] border border-[#e3e3e349] bg-[#444d5a19]'>
-                                <Image alt='icons' src={item.img} width={45} height={37} />
+                            <div data-aos="zoom-in" key={item.id} className='flex flex-col gap-2 justify-center items-center py-9 px-8 rounded-[8px] border border-[#e3e3e349] bg-[#444d5a19] group'>
+                                <Image alt='icons' src={item.img} width={45} height={37} className='group-hover:scale-130 cursor-pointer transition-all duration-700 ease-out ' />
                                 <h3 className='font-Manrope text-center font-semibold text-[19px] tracking-[0.4px] bg-[linear-gradient(0deg,#888888_0%,#ffffff_55%)] bg-clip-text text-transparent'>{item.title}</h3>
                             </div>
                         ))}

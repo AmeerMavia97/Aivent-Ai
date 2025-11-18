@@ -15,7 +15,9 @@ const TeamsCard = ({title , img , desc , designation}) => {
             >
 
                 {/* Text Block */}
-                <div style={{backdropFilter: "blur(10px)"}} className="absolute left-4 right-4 bottom-4 py-5 rounded-[10px]  z-50 bg-[#ffffff2c] w-[90%]">
+                <div style={{backdropFilter: "blur(10px)"}} className="absolute left-4 right-4 bottom-[-100%] py-5 rounded-[10px]  z-50 bg-[#ffffff2c] w-[90%]  
+                  transition-all duration-700 ease-out 
+                  group-hover:bottom-4">
                     <div className="transition-all duration-1000 flex flex-col gap-1 z-40 relative items-center  text-center px-6">
                         
                         <h4 className="text-white text-[26px] leading-[30px] font-Manrope font-semibold">{title } </h4>
