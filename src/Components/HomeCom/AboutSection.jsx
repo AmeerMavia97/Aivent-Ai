@@ -41,7 +41,7 @@ const AboutSection = () => {
                   alt="Logo"
                   width={450}
                   height={60}
-                  className="rotate w-[315px] h-[325px] sm:w-[450px] sm:h-[450px]" 
+                  className="rotate w-[315px] h-[310px] sm:w-[450px] sm:h-[450px]" 
                 />
               </div>
             </div>

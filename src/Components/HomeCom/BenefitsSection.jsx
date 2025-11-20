@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 const CardData = [
     {
         id: 1,
@@ -29,8 +29,11 @@ const CardData = [
 ];
 
 const BenefitsSection = () => {
+
+    const [open, setOpen] = useState(false);
+
     return (
-        <section className='flex flex-col justify-center items-center bg-blue py-20 pb-32 px-7  sm:px-16 '>
+        <section onClick={() => setOpen(!open)} className='flex flex-col justify-center items-center bg-blue py-20 pb-32 px-7  sm:px-16 '>
             <div className='max-w-[1200px]'>
                 <div className='flex flex-col justify-center items-center gap-3 text-center '>
                     <p data-aos="fade-up"  data-aos-duration="1500" className="text-white font-Manrope font-semibold text-lg md:text-[15px] tracking-[0.2px]">
@@ -69,9 +72,9 @@ const BenefitsSection = () => {
                             <div  className="absolute inset-0 bg-[#0000005d]  shadow-inner-blue opacity-0 
                   transition-all duration-500 group-hover:opacity-100 blur-2xl"></div>
 
-                            <div  className="absolute bottom-[-100%] left-0 w-full px-6 pb-5 sm:pb-8
+                            <div  className={`absolute  ${open ? "bottom-4" : "bottom-[-100%]"} left-0 w-full px-6 pb-5 sm:pb-8
                   transition-all duration-700 ease-out 
-                  group-hover:bottom-4">
+                  group-hover:bottom-4`}>
                                 <h1 className="font-Manrope text-[35px] leading-[45px] sm:text-[45px] sm:leading-[56px] font-[600]
                    bg-gradient-to-t from-[#d3d3d3] to-white bg-clip-text text-transparent">
                                     {items.title}

@@ -1,10 +1,15 @@
+"use client"
 import { ArrowRight } from 'lucide-react'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 
 const AttendCard = ({title , img}) => {
+
+        const [open, setOpen] = useState(false);
+    
+        
     return (
-        <div data-aos="img-gutter-only" 
+        <div data-aos="img-gutter-only" onClick={() => setOpen(!open)}
   data-aos-duration="1000" className="group relative cursor-pointer">
 
             <div
@@ -35,24 +40,24 @@ const AttendCard = ({title , img}) => {
                     width={270}
                     height={350}
                     alt=""
-                    className="
+                    className={`
             w-[100%] h-[320px] sm:h-[340px] object-cover 
             transition-all duration-[1000ms] ease-[cubic-bezier(0.6,0.03,0.28,0.98)]
-            group-hover:scale-110
+            group-hover:scale-110 ${open ? "scale-110" : "scale-100"}
             z-0
-          "
+          `}
                 />
 
                 {/* Purple Radial Glow (only on hover) */}
                 <div
-                    className="
+                    className={`
             absolute inset-0 pointer-events-none 
             opacity-0 
             transition-opacity duration-700
             group-hover:opacity-100
             bg-[radial-gradient(circle,#5676f641_55%,#5677F6_90%)]
-            z-5
-          "
+            z-5  ${open ? "opacity-100" : "opacity-0"}
+          `}
                 ></div>
             </div>
         </div>

@@ -1,13 +1,17 @@
+"use client"
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 
 const LevelsCard = ({title , desc, icon}) => {
+    const [open, setOpen] = useState(false);
+
+
     return (
-        <div data-aos="img-gutter-only"   
+        <div data-aos="img-gutter-only"    onClick={() => setOpen(!open)}
   data-aos-duration="1000" className='bg-[#263f5e57] rounded-[14px] group   '>
 
             <div className='px-9 py-10 flex justify-between flex-col gap-7'>
-                <div className='flex items-center group-hover:scale-120 cursor-pointer transition-all duration-700 ease-out  w-max'>
+                <div className={`flex items-center group-hover:scale-120 cursor-pointer transition-all duration-700 ease-out  w-max ${open ? "scale-120" : "scale-100"}`}>
                     <Image src={`${icon}`} className='w-[70px] sm:w-[80px]' width={90} height={90} alt={"icon"}></Image>
                 </div>
 
