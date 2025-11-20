@@ -21,27 +21,17 @@ const HeroSection = () => {
             <div className="absolute bottom-0 left-0 w-full h-[100%] z-20 bg-gradient-to-b from-[#5676f696] to-[#000000a4]"></div>
 
 
-            <div data-aos="zoom-out"  data-aos-duration="2000"  data-aos-delay="1000" className="relative z-30 flex flex-col items-center justify-center text-center mt-21 h-full px-4  "> 
+            <div data-aos="zoom-out"  data-aos-duration="2000"  data-aos-delay="1000" className="relative z-30 flex flex-col items-center justify-center text-center mt-21 gap-2 sm:gap-0 h-full px-4  "> 
                 
-                <p className="text-white font-Manrope font-semibold text-lg md:text-[15px] mb-2  tracking-[0.2px]">
+                <p className="text-white font-Manrope font-semibold text-[16.5px] md:text-[15px] mb-2  tracking-[0.2px]">
                     <span className='text-skyBlue'>{"["}</span> y analítica avanzada
                     In-company <span className='text-skyBlue'>{"]"}</span>
                 </p>
 
-                <h1 className="bg-[linear-gradient(0deg,#888888_0%,#ffffff_55%)] bg-clip-text text-transparent font-semibold text-4xl uppercase md:text-6xl lg:text-[72px] mb-3 leading-tight">
+                <h1 className="bg-[linear-gradient(0deg,#888888_0%,#ffffff_55%)] bg-clip-text text-transparent font-semibold text-[37px] uppercase md:text-6xl lg:text-[72px] mb-3 leading-tight">
                     Certificaciones y diplomados <br />  de inteligencia artificial
                 </h1>
                
-                {/* <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8 mb-6 text-white">
-                    <div className="flex items-center space-x-3">
-                        <Calendar className="text-skyBlue" />
-                        <span className='font-Manrope font-bold text-[20.5px]'>October 1–5, 2025</span>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                        <MapPin className="text-skyBlue" />
-                        <span className='font-Manrope font-bold text-[20.5px]'>San Francisco, CA</span>
-                    </div>
-                </div> */}
 
                 <div className="flex flex-col mt-5 md:flex-row space-y-4 md:space-y-0 md:space-x-4">
                     <a

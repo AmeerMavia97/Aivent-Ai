@@ -30,7 +30,7 @@ const CardData = [
 
 const BenefitsSection = () => {
     return (
-        <section className='flex flex-col justify-center items-center bg-blue py-20 pb-32 px-16 '>
+        <section className='flex flex-col justify-center items-center bg-blue py-20 pb-32 px-7  sm:px-16 '>
             <div className='max-w-[1200px]'>
                 <div className='flex flex-col justify-center items-center gap-3 text-center '>
                     <p data-aos="fade-up"  data-aos-duration="1500" className="text-white font-Manrope font-semibold text-lg md:text-[15px] tracking-[0.2px]">
@@ -40,18 +40,18 @@ const BenefitsSection = () => {
                         Para tu empresa
                     </h1>
 
-                    <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500"  className='text-[#ffffffda] font-Manrope text-[16px] font-[500] leading-[28px] w-[60%] '>
+                    <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500"  className='text-[#ffffffda] font-Manrope text-[16px] font-[500] leading-[28px] sm:w-[60%] '>
                         Capacitar a tus colaboradores haciendo upskilling y reskilling en analítica avanzada es esencial para:
                     </p>
 
                 </div>
 
-                <div className='grid grid-cols-2 gap-10 place-content-center mt-10'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 gap-10 place-content-center mt-10'>
 
                     {CardData.map((items, index) => (
                        <div data-aos="img-gutter-only"  key={items.id} 
   data-aos-duration="1000" className='w-full'>
-                         <div   className="relative group w-[100%]  h-[370px] overflow-hidden rounded-[12px]  cursor-pointer card bg-transparent ">
+                         <div   className="relative group w-[100%] h-[320px] sm:h-[370px] overflow-hidden rounded-[12px]  cursor-pointer card bg-transparent ">
 
                             <Image
                                 src={items.image}
@@ -69,10 +69,10 @@ const BenefitsSection = () => {
                             <div  className="absolute inset-0 bg-[#0000005d]  shadow-inner-blue opacity-0 
                   transition-all duration-500 group-hover:opacity-100 blur-2xl"></div>
 
-                            <div  className="absolute bottom-[-100%] left-0 w-full px-6 pb-8
+                            <div  className="absolute bottom-[-100%] left-0 w-full px-6 pb-5 sm:pb-8
                   transition-all duration-700 ease-out 
                   group-hover:bottom-4">
-                                <h1 className="font-Manrope text-[45px] leading-[56px] font-[600]
+                                <h1 className="font-Manrope text-[35px] leading-[45px] sm:text-[45px] sm:leading-[56px] font-[600]
                    bg-gradient-to-t from-[#d3d3d3] to-white bg-clip-text text-transparent">
                                     {items.title}
                                 </h1>

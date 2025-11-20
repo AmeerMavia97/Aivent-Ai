@@ -18,10 +18,10 @@ const TeamsCard = ({title , img , desc , designation}) => {
                 <div style={{backdropFilter: "blur(10px)"}} className="absolute left-4 right-4 bottom-[-100%] py-5 rounded-[10px]  z-50 bg-[#ffffff2c] w-[90%]  
                   transition-all duration-700 ease-out 
                   group-hover:bottom-4">
-                    <div className="transition-all duration-1000 flex flex-col gap-1 z-40 relative items-center  text-center px-6">
+                    <div className="transition-all duration-1000 flex flex-col gap-2 sm:gap-1 z-40 relative items-center  text-center px-6">
                         
-                        <h4 className="text-white text-[26px] leading-[30px] font-Manrope font-semibold">{title } </h4>
-                         <p className="text-[#e7e7e7] mt-3 font-Manrope font-semibold text-[16px] group-hover:text-white flex gap-2 items-center leading-[18px]">
+                        <h4 className="text-white text-[22px] sm:text-[26px] leading-[30px] font-Manrope font-semibold">{title } </h4>
+                         <p className="text-[#e7e7e7] mt-1 sm:mt-3 font-Manrope font-semibold text-[15px] sm:text-[16px] group-hover:text-white flex gap-2 items-center leading-[18px]">
                            {desc}
 
                         </p>
@@ -44,7 +44,7 @@ const TeamsCard = ({title , img , desc , designation}) => {
                     height={380}
                     alt=""
                     className="
-            w-[100%] h-[380px] object-cover 
+            w-[100%] h-[330px] sm:h-[380px] object-cover 
             transition-all duration-[1000ms] ease-[cubic-bezier(0.6,0.03,0.28,0.98)]
             group-hover:scale-110
             z-0

@@ -10,8 +10,8 @@ const Footer = () => {
       <div className='
       ' >
         <div className='flex justify-center'>
-          <div className='pb-12 pt-24 w-full max-w-[1170px] '>
-              <div className="flex justify-between w-full">
+          <div className='pb-12 pt-16 sm:pt-24 w-full max-w-[1170px] '>
+              <div className="flex justify-between w-full flex-col sm:flex-row gap-14 sm:gap-0">
                 {/* Address */}
                 <div className='font-Manrope text-center text-white'>
                   <h3 className='font-bold text-[21px]'>Address</h3>
@@ -52,7 +52,7 @@ const Footer = () => {
         <div className='border-t-[0.5px] border-[#aaaaaa] py-4.5'>
           <div>
             <div>
-              <div className='font-Manrope text-white text-center font-[500] tracking-[0.5px]  '>
+              <div className='font-Manrope text-[14px] sm:text-[16px] text-white text-center font-[500] tracking-[0.5px]  '>
                 Copyright 2025 - AIvent by Designesia
 
               </div>

@@ -36,7 +36,7 @@ export default function Navbar({ locoScroll }) {
     return (
         <>
             <nav
-                className={`fixed top-0 left-0 py-1.5 w-full z-[999999] 
+                className={`fixed top-0 left-0 pt-3 sm:py-1.5 w-full z-[999999] 
     transition-all duration-300 ease-[cubic-bezier(.4,0,.2,1)] 
     ${scrolled ? "bg-blue/90 backdrop-blur-md shadow-md" : "bg-transparent shadow-none backdrop-blur-0"}`}
             >
@@ -116,13 +116,13 @@ export default function Navbar({ locoScroll }) {
 
                 {/* Mobile Menu */}
                 {menuOpen && (
-                    <div className="md:hidden bg-[#231e41dd] backdrop-blur-sm px-6 py-4">
+                    <div className="md:hidden bg-blue/90  backdrop-blur-sm px-6 py-4">
                         <ul className="flex flex-col space-y-4 text-white font-medium">
                             {menuItems.map(([label, href]) => (
                                 <li key={href}>
                                     <Link
                                         href={href}
-                                        className="hover:text-purple-400 transition block"
+                                        className="hover:text-skyBlue transition block"
                                         onClick={() => setMenuOpen(false)} // close menu on click
                                     >
                                         {label}
@@ -130,8 +130,8 @@ export default function Navbar({ locoScroll }) {
                                 </li>
                             ))}
                             <li>
-                                <button className="w-full bg-purple-600 hover:bg-purple-700 transition text-white font-semibold px-5 py-2 rounded-md select-none">
-                                    Buy Tickets
+                                <button className="w-max sm:w-full bg-skyBlue hover:bg-skyBlue transition text-white font-semibold px-5 py-2 rounded-md select-none">
+                                    Contact Us
                                 </button>
                             </li>
                         </ul>

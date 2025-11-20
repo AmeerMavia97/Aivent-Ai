@@ -36,7 +36,7 @@ const AttendCard = ({title , img}) => {
                     height={350}
                     alt=""
                     className="
-            w-[100%] h-[340px] object-cover 
+            w-[100%] h-[320px] sm:h-[340px] object-cover 
             transition-all duration-[1000ms] ease-[cubic-bezier(0.6,0.03,0.28,0.98)]
             group-hover:scale-110
             z-0

@@ -6,7 +6,7 @@ import TeamsCard from '../Cards/TeamsCard'
 const TeamsSection = () => {
     return (
 
-        <section className='flex justify-center items-center px-16 py-14 bg-blue'>
+        <section className='flex justify-center items-center px-7 sm:px-16 py-14 bg-blue'>
             <div className='max-w-[1200px] '>
 
                 <div>
@@ -14,13 +14,13 @@ const TeamsSection = () => {
                         <p className="text-white font-Manrope font-semibold text-lg md:text-[15px] tracking-[0.2px]">
                             <span className='text-skyBlue'>{"["}</span> Our Teams   <span className='text-skyBlue'>{"]"}</span>
                         </p>
-                        <h1 className="bg-[linear-gradient(0deg,#888888_0%,#ffffff_55%)] bg-clip-text text-transparent font-bold text-4xl  md:text-6xl lg:text-[48px]  leading-[56px]">
+                        <h1 className="bg-[linear-gradient(0deg,#888888_0%,#ffffff_55%)] bg-clip-text text-transparent font-bold text-4xl leading-[45px] md:text-6xl lg:text-[48px]  sm:leading-[56px]">
                             Profesores altamente calificados
 
                         </h1>
                     </div>
 
-                    <div className='grid grid-cols-3 gap-7 mt-8 px-6'>
+                    <div className='grid sm:grid-cols-3 gap-7 mt-8 px-2 sm:px-6'>
 
                         <TeamsCard img={"Ana.png"} title={"Ana Mireya López"} desc={"CEO Vectux Analytics MBA, IPADE"} designation={'Certificado en Productos de Inteligencia Artificial, MIT.'} />
                         <TeamsCard img={"Gerzo.png"} title={"Gerzo Morales Gallardo"} desc={"Gerzo Morales Gallardo"} designation={'Certificado en Data Science, MIT.'} />

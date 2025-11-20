@@ -49,35 +49,35 @@ const MiniCardItems = [
 const ServiceSection = () => {
     return (
         <>
-            <section className='bg-blue px-16 pt-10 pb-24 flex justify-center items-center'>
+            <section className='bg-blue px-8 pt-4 sm:px-16 sm:pt-10 pb-24 flex justify-center items-center'>
                <div className='max-w-[1200px]'>
-                 <div className='flex '>
-                    <div className='flex flex-col justify-center gap-6 w-[65%]'>
-                        <h1 data-aos="fade-up"  data-aos-duration="1500" className="bg-[linear-gradient(0deg,#888888_0%,#ffffff_55%)] bg-clip-text text-transparent font-bold text-4xl  md:text-6xl lg:text-[43px]  leading-[56px]">
+                 <div className='flex flex-col sm:flex-row'>
+                    <div className='flex flex-col justify-center gap-6 sm:w-[65%]'>
+                        <h1 data-aos="fade-up"  data-aos-duration="1500" className="bg-[linear-gradient(0deg,#888888_0%,#ffffff_55%)] bg-clip-text text-transparent font-bold text-[38px]  md:text-6xl lg:text-[43px] leading-[45px] sm:leading-[56px]">
                             Desarrollamos <br /> habilidades analíticas
                         </h1>
 
-                        <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500" className='text-[#ffffffda] font-Manrope text-[16px] font-[500] leading-[28px] w-[80%] '>
+                        <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500" className='text-[#ffffffda] font-Manrope text-[15px] sm:text-[16px] font-[500] leading-[28px] sm:w-[80%] '>
                             Nuestros programas son desarrollados a la medida y están enfocados en exponenciar las habilidades analíticas “soft” y “hard” de tus colaboradores, que son necesarias para mantener tu negocio a la vanguardia en la era de la Inteligencia Artificial.
                         </p>
 
                         <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500" className="flex flex-col mt-2 md:flex-row space-y-4 md:space-y-0 md:space-x-4">
                             <button
                                 href="#section-tickets"
-                                className="bg-skyBlue font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none"
+                                className="bg-skyBlue w-max font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none"
                             >
                                 Más información
                             </button>
                         </div>
                     </div>
 
-                    <div data-aos="zoom-in" className='flex justify-end pr-2 w-[35%]'>
+                    <div data-aos="zoom-in" className='flex justify-end pt-12 sm:pt-0 sm:pr-2 sm:w-[35%]'>
                         <Image  alt={"services"} src={"/assets/Frame 39.png"} width={350} height={360}></Image>
                     </div>
                 </div>
                 <div className='mt-12'>
 
-                    <div className='grid grid-cols-4 gap-4 px-1'>
+                    <div className='grid grid-cols-1 sm:grid-cols-4 gap-4 px-1'>
                         {MiniCardItems.map(item => (
                             <div data-aos="zoom-in" key={item.id} className='flex flex-col gap-2 justify-center items-center py-9 px-8 rounded-[8px] border border-[#e3e3e349] bg-[#444d5a19] group'>
                                 <Image alt='icons' src={item.img} width={45} height={37} className='group-hover:scale-130 cursor-pointer transition-all duration-700 ease-out ' />

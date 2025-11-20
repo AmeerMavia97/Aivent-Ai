@@ -6,26 +6,26 @@ const AboutSection = () => {
   return (
     <>
 
-      <div className='bg-blue relative flex items-center justify-center px-14 '>
-        <div className='flex justify-center items-center  py-20 max-w-[1200px] '>
-          <div className='grid grid-cols-2 place-content-center'>
-            <div className='flex justify-center'>
-              <div className='flex flex-col justify-center gap-6'>
-                <p data-aos="fade-up"   className="text-white font-Manrope font-semibold text-lg md:text-[15px] tracking-[0.2px]">
+      <div className='bg-blue relative flex items-center justify-center px-8 sm:px-14 '>
+        <div className='flex justify-center items-center py-16 sm:py-20 max-w-[1200px] '>
+          <div className='grid grid-cols-1  sm:grid-cols-2 place-content-center gap-12 sm:gap-0'>
+            <div className='flex justify-center order-2 sm:order-1 '>
+              <div className='flex flex-col justify-center gap-6 [direction:ltr] '>
+                <p data-aos="fade-up"   className="text-white font-Manrope font-semibold text-lg  md:text-[15px] tracking-[0.2px]">
                   <span className='text-skyBlue'>{"["}</span> En Vectux Academy   <span className='text-skyBlue'>{"]"}</span>
                 </p>
-                <h1 data-aos="fade-up" data-aos-delay="300" className="bg-[linear-gradient(0deg,#888888_0%,#ffffff_55%)] bg-clip-text text-transparent font-bold text-4xl  md:text-6xl lg:text-[48px]  leading-[56px]">
+                <h1 data-aos="fade-up" data-aos-delay="300" className="bg-[linear-gradient(0deg,#888888_0%,#ffffff_55%)] bg-clip-text text-transparent font-bold text-4xl leading-[45px] md:text-6xl lg:text-[48px]  sm:leading-[56px]">
                  Formamos Organizaciones  <br /> Data Driven
                 </h1>
 
-                <p data-aos="fade-up" data-aos-delay="500"  className='text-[#ffffffda] font-Manrope text-[16px] font-[500] leading-[28px] w-[90%] '>
+                <p data-aos="fade-up" data-aos-delay="500"  className='text-[#ffffffda] font-Manrope text-[15px] sm:text-[16px] font-[500] leading-[28px] w-full sm:w-[90%] '>
                   En Vectux Academy, impartimos certificaciones y cursos de inteligencia artificial y analítica avanzada para empresas, con formación de alto impacto liderada por expertos certificados de prestigiosas instituciones como el MIT, Harvard, Kellogg, IPADE, ITAM y la Universidad Católica de Chile. Una combinación de excelencia académica y experiencia práctica adaptada a las necesidades de tu negocio.
                 </p>
 
                 <div data-aos="fade-up" data-aos-delay="300" className="flex flex-col mt-2 md:flex-row space-y-4 md:space-y-0 md:space-x-4">
                     <a
                         href="#section-tickets"
-                        className="bg-skyBlue font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none"
+                        className="bg-skyBlue w-max font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-8 py-4 rounded-full select-none"
                     >
                        Contáctanos
                     </a>
@@ -34,14 +34,14 @@ const AboutSection = () => {
               </div>
             </div>
 
-            <div className='flex justify-end items-center'>
+            <div className='flex justify-center sm:justify-end items-center order-1 sm:order-2'>
               <div  data-aos="big-zoom"  data-aos-duration="2000" className="flex justify-center items-center">
                 <Image
                   src="/assets/c1.webp"
                   alt="Logo"
                   width={450}
                   height={60}
-                  className="rotate" 
+                  className="rotate w-[315px] h-[315px]" 
                 />
               </div>
             </div>
