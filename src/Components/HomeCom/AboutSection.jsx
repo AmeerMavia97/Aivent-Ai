@@ -6,15 +6,15 @@ const AboutSection = () => {
   return (
     <>
 
-      <div className='bg-blue relative flex items-center justify-center px-8 sm:px-14 '>
-        <div className='flex justify-center items-center py-16 sm:py-20 max-w-[1200px] '>
-          <div className='grid grid-cols-1  sm:grid-cols-2 place-content-center gap-12 sm:gap-0'>
-            <div className='flex justify-center order-2 sm:order-1 '>
-              <div className='flex flex-col justify-center gap-6 [direction:ltr] '>
+      <div className='bg-blue relative flex items-center justify-center px-8 sm:px-14 min-[860px]:!px-10 lg:!px-14 '>
+        <div className='flex justify-center items-center py-16 md:py-14 min-[860px]:py-20 max-w-[1200px] '>
+          <div className='grid grid-cols-1  min-[860px]:grid-cols-2 place-content-center gap-12 sm:gap-0'>
+            <div className='flex justify-center order-2 min-[860px]:order-1 mt-0 sm:mt-10  '>
+              <div className='flex flex-col justify-center gap-6 sm:gap-3 md:gap-6 [direction:ltr] '>
                 <p data-aos="fade-up"   className="text-white font-Manrope font-semibold text-lg  md:text-[15px] tracking-[0.2px]">
                   <span className='text-skyBlue'>{"["}</span> En Vectux Academy   <span className='text-skyBlue'>{"]"}</span>
                 </p>
-                <h1 data-aos="fade-up" data-aos-delay="300" className="bg-[linear-gradient(0deg,#888888_0%,#ffffff_55%)] bg-clip-text text-transparent font-bold text-4xl leading-[45px] md:text-6xl lg:text-[48px]  sm:leading-[56px]">
+                <h1 data-aos="fade-up" data-aos-delay="300" className="bg-[linear-gradient(0deg,#888888_0%,#ffffff_55%)] bg-clip-text text-transparent font-bold text-4xl leading-[45px] md:text-5xl  lg:text-[48px]  sm:leading-[56px]">
                  Formamos Organizaciones  <br /> Data Driven
                 </h1>
 
@@ -34,14 +34,14 @@ const AboutSection = () => {
               </div>
             </div>
 
-            <div className='flex justify-center sm:justify-end items-center order-1 sm:order-2'>
+            <div className='flex justify-center min-[860px]:justify-end items-center order-1 min-[860px]:order-2'>
               <div  data-aos="big-zoom"  data-aos-duration="2000" className="flex justify-center items-center">
                 <Image
                   src="/assets/c1.webp"
                   alt="Logo"
                   width={450}
                   height={60}
-                  className="rotate w-[315px] h-[310px] sm:w-[450px] sm:h-[450px]" 
+                  className="rotate w-[315px] h-[310px] sm:w-[355px] sm:h-[355px] min-[860px]:!w-[350px] min-[860px]:!h-[350px] lg:!w-[450px] lg:!h-[450px]" 
                 />
               </div>
             </div>

@@ -66,14 +66,14 @@ export default function Navbar({ locoScroll }) {
                     </ul>
 
                     {/* Right Button */}
-                    <div className="hidden md:block">
+                    <div className="hidden min-[840px]:block">
                         <button className="bg-skyBlue font-Manrope uppercase hover:bg-sky-700 transition text-white font-[700] text-[12.5px] tracking-[1.3px] px-6 py-2.5 rounded-md select-none">
                             Contacta con
                         </button>
                     </div>
 
                     {/* Mobile Hamburger */}
-                    <div className="md:hidden flex items-center">
+                    <div className="min-[840px]:hidden flex items-center">
                         <button
                             onClick={() => setMenuOpen(!menuOpen)}
                             aria-label="Toggle menu"
@@ -116,7 +116,7 @@ export default function Navbar({ locoScroll }) {
 
                 {/* Mobile Menu */}
                 {menuOpen && (
-                    <div className="md:hidden bg-blue/90  backdrop-blur-sm px-6 py-4">
+                    <div className="min-[840px]:hidden bg-blue/90  backdrop-blur-sm px-6 py-4">
                         <ul className="flex flex-col space-y-4 text-white font-medium">
                             {menuItems.map(([label, href]) => (
                                 <li key={href}>

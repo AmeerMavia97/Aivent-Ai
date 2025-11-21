@@ -50,7 +50,7 @@ const TeamsCard = ({title , img , desc , designation}) => {
                     height={380}
                     alt=""
                     className="
-            w-[100%] h-[330px] sm:h-[380px] object-cover 
+            w-[100%] h-[330px] sm:h-[300px] md:h-[330px] xl:h-[380px] object-cover 
             transition-all duration-[1000ms] ease-[cubic-bezier(0.6,0.03,0.28,0.98)]
             group-hover:scale-110
             z-0

@@ -4,15 +4,15 @@ import React from 'react'
 const ContactUsSection = () => {
     return (
         <>
-            <section className='bg-blue relative overflow-hidden flex justify-center px-7.5 sm:px-16'>
-                <div className='py-16 sm:py-20 pt-28 grid sm:grid-cols-2  max-w-[1200px] 
+            <section className='bg-blue relative overflow-hidden flex justify-center px-7.5 sm:px-10 min-[860px]:px-16'>
+                <div className='py-16 sm:py-20 pt-28 grid min-[860px]:grid-cols-2  max-w-[1200px] 
                 '>
                     <div className='flex flex-col justify-center gap-6 '>
                         <div className='flex flex-col justify-center gap-6'>
                             <p data-aos="fade-up"  className="text-white font-Manrope font-semibold text-lg md:text-[15px] tracking-[0.2px]">
                                 <span className='text-skyBlue'>{"["}</span> Get In Touch  <span className='text-skyBlue'>{"]"}</span>
                             </p>
-                            <h1 data-aos="fade-up" data-aos-delay="300" className="bg-[linear-gradient(0deg,#888888_0%,#ffffff_55%)] bg-clip-text text-transparent font-bold text-4xl  md:text-6xl lg:text-[48px] leading-[45px]  sm:leading-[56px]">
+                            <h1 data-aos="fade-up" data-aos-delay="300" className="bg-[linear-gradient(0deg,#888888_0%,#ffffff_55%)] bg-clip-text text-transparent font-bold text-4xl md:text-5xl lg:text-[48px] leading-[45px]  sm:leading-[56px]">
                                 ¡Empodera
                                 <br /> a tu equipo!
                             </h1>
@@ -59,7 +59,7 @@ const ContactUsSection = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='sm:px-5 mt-10 sm:mt-0'>
+                    <div className='min-[860px]:px-5 mt-10 min-[860px]:mt-0'>
 
                         <form data-aos="zoom-out-down" className='bg-[#5676f617] rounded-[7px] px-7 sm:px-10 py-20' action="">
                             <div className='grid grid-cols-2  gap-8'>

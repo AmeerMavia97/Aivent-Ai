@@ -39,18 +39,26 @@ const BenefitsSection = () => {
     };
 
     return (
-        <section className='flex flex-col justify-center items-center bg-blue py-20 pb-32 px-7 sm:px-16'>
+        <section className='flex flex-col justify-center items-center bg-blue py-20 sm:py-14 md:py-20 pb-32 px-7 md:px-10 min-[860px]:!px-16'>
             <div className='max-w-[1200px]'>
 
-                {/* heading section ... unchanged */}
-                
-                <div className='grid grid-cols-1 sm:grid-cols-2 gap-10 place-content-center mt-10'>
+                <div className='max-w-[1200px]'>
+                    <div className='flex flex-col justify-center items-center gap-3 text-center '>
+
+                        <p data-aos="fade-up" data-aos-duration="1500" className="text-white font-Manrope font-semibold text-lg md:text-[15px] tracking-[0.2px]"> <span className='text-skyBlue'>{"["}</span> Beneficios <span className='text-skyBlue'>{"]"}</span> </p>
+                        <h1 data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500" className="bg-[linear-gradient(0deg,#888888_0%,#ffffff_55%)] bg-clip-text text-transparent font-bold text-4xl md:text-5xl  lg:text-[48px] leading-[56px]"> Para tu empresa </h1>
+                        <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500" className='text-[#ffffffda] font-Manrope text-[16px] font-[500] leading-[28px] md:w-[60%] '> Capacitar a tus colaboradores haciendo upskilling y reskilling en analítica avanzada es esencial para: </p>
+                    </div>
+
+                </div>
+
+                <div className='grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-6 md:gap-10 place-content-center mt-10'>
 
                     {CardData.map((items) => (
                         <div key={items.id} data-aos="img-gutter-only" data-aos-duration="1000" className='w-full'>
 
                             <div
-                                className="relative group w-full h-[320px] sm:h-[370px] overflow-hidden rounded-[12px] cursor-pointer"
+                                className="relative group w-full h-[320px] min-[860px]:!h-[370px] overflow-hidden rounded-[12px] cursor-pointer"
                                 onClick={() => handleCardClick(items.id)} // 👈 mobile click
                             >
 
@@ -91,12 +99,12 @@ const BenefitsSection = () => {
                                         ${openCard === items.id ? "bottom-4" : "bottom-[-100%]"}
                                     `}
                                 >
-                                    <h1 className="font-Manrope text-[35px] leading-[45px] sm:text-[45px] sm:leading-[56px] font-[600]
+                                    <h1 className="font-Manrope text-[35px] leading-[45px] md:text-[37px] min-[860px]:!text-[45px] min-[860px]:leading-[56px] font-[600]
                                        bg-gradient-to-t from-[#d3d3d3] to-white bg-clip-text text-transparent">
                                         {items.title}
                                     </h1>
 
-                                    <p className="text-[#ffffffda] font-Manrope text-[16px] font-[500] leading-[24px] mt-2 w-[80%]">
+                                    <p className="text-[#ffffffda] font-Manrope text-[16px] font-[500] leading-[24px] mt-2 min-[860px]:w-[80%]">
                                         {items.desc}
                                     </p>
                                 </div>

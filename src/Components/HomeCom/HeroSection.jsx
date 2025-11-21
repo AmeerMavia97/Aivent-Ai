@@ -4,7 +4,7 @@ import React from 'react';
 
 const HeroSection = () => {
     return (
-        <section className="relative min-h-screen pb-52 pt-36 w-full flex justify-center  items-center overflow-hidden ">
+        <section className="relative min-h-screen md:min-h-max lg:min-h-screen pb-52 pt-36 w-full flex justify-center  items-center overflow-hidden ">
 
             <div className='max-w-8xl'>
                 <video
@@ -28,7 +28,7 @@ const HeroSection = () => {
                     In-company <span className='text-skyBlue'>{"]"}</span>
                 </p>
 
-                <h1 className="bg-[linear-gradient(0deg,#888888_0%,#ffffff_55%)] bg-clip-text text-transparent font-semibold text-[37px] uppercase md:text-6xl lg:text-[72px] mb-3 leading-tight">
+                <h1 className="bg-[linear-gradient(0deg,#888888_0%,#ffffff_55%)] bg-clip-text text-transparent font-semibold text-[37px] sm:text-[42px] uppercase md:text-5xl lg:text-[72px] mb-3 leading-tight">
                     Certificaciones y diplomados <br />  de inteligencia artificial
                 </h1>
                
